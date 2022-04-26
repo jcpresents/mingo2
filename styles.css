@@ -1,0 +1,310 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+
+    /* center mobile view */
+    display: table;
+    margin: auto;
+
+    /* Smooth scrolling on full website */
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: auto;
+    text-align: center;
+
+    /* Center mobile view */
+    display: table-cell;
+    vertical-align: top;
+}
+
+/* Navigation Bar container */
+nav {
+    display: flex;
+    margin: 0;
+    height: 10vh;
+    min-height: 40px;
+    background-color: white;
+}
+
+/* Main navigation styles */
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.9em;
+    margin: 0;
+   
+}
+
+.main-nav li {
+    padding: 10px;
+}
+
+.main-nav a {
+    color: red;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: black;
+}
+
+/* push navigation to right side */
+.push {
+    margin-left: auto;
+}
+
+/* year navigation styles */
+.pagination {
+    padding: 0;
+}
+
+/* mingo grid layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    align-items: start;
+    width: 73%;
+}
+
+
+  
+/* container for each movie poster image */
+.movie {
+    background-color: none;
+    margin: auto;
+    height: 100%;
+    float: center;
+    position: relative;
+
+    /* change default color to greyscale */
+    filter: grayscale(.9);
+
+    /* change cursor to pointer */
+    cursor: pointer;
+
+    /* text styles **COLORS ALWAYS GREYSCALE** */
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-align: center;
+    font-size: 1em;
+
+    /* poster image border */
+    border-radius: 4px;
+    /* border: 1px solid #bbb; */
+    border: 4px solid rgba(187, 187, 187, 0);
+    
+    /* colors fade out*/
+    transition: all 0.55s ease-out;
+}
+
+/* Main MINGO header across grid style hidden when screen is small */
+.letter-container-nm {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-align: center;
+    font-size: 3em;
+}
+
+/* MINGO hidden when screen is full sized */
+.letter-container-sm {
+    display: none;
+}
+
+/* default image styles*/
+img {
+    min-height: 325px;
+    max-height: 325px;
+    width: 100%;
+    object-fit: cover;
+    padding: none;
+}
+
+/* two column article for descriptions */
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+
+    border: 1px solid #bbb;
+}
+
+/* text styling for article */
+.article-txt {
+    background-color: rgb(189, 18, 18);
+    border: 1px solid #bbb;
+}
+
+/* image styling for article */
+.article-img {
+    display: flex;
+    height: 100%;
+    min-height: 275px;
+    max-height: 100%;
+    padding: none;
+}
+
+/* description img styles */
+.description-img {
+    height: 100%;
+    min-height: 275px;
+    max-height: 300px;
+    object-fit: fill;
+    padding: none;
+}
+
+.description-txt {
+    margin-left: auto;
+}
+
+/* fit poster to movie grid frame */
+.movie > img {
+    width: 100%;
+    padding: none;
+    border-radius: 12px;
+
+    object-fit: fill;
+}
+
+/* overlay text on top of movie poster */
+.centered-txt {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+/* on hover return to full color */
+.movie:hover {
+    color: rgb(0, 255, 13);
+    padding: none;
+    transition: all 0.4s ease-in;
+    filter: none;
+}
+
+/* three column footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+
+/* footer text styles */
+.footer-txt {
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+
+/* remove button styling to keep consistent design */
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* return to top button */
+.rtrn-btn {
+    z-index: 99;
+    font-size: 35px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* return to top button hover */
+.rtrn-btn:hover {
+    background-color: yellow;
+}
+
+/* 600px screen minimum breakpoint */
+@media only screen and (max-width: 600px) { 
+    /* set single column format when small */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: auto;
+
+        position: relative;
+        max-width: 400px;
+    }
+
+    /* Main MINGO header across grid style ** HIDDEN WHEN BELOW 600PX WIDTH ** */
+    .letter-container-nm {
+        display: none;
+    }
+
+    .letter-container-sm {
+        /* show letters in column when small */
+        display: block;
+
+        /* font styles */
+        font-size: 10em;
+        font-weight: 800;
+        color: white;
+        
+        /* spacing */
+        padding: none;
+        margin: -20px;
+    }
+
+    /* navigation container */
+    nav {
+        height: 15vh;
+    }
+
+    /* main navigation styles */
+    .main-nav {
+        font-size: 0.8em;
+        padding: 0;
+    }
+
+    /* year navigation styles */
+    .pagination {
+        font-size: 0.8em;
+    }
+
+    /* default image styles */
+    img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: fill;
+        margin: auto;
+    }
+}
+
+/* Additions */
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.frame {
+    background: url(/images/BG/frame2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}

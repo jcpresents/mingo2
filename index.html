@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MINGO</title>
+
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Bootstrap CDN 5.1.3 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Bootstrap Icon CDN 1.8.1 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+         <!-- CSS Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <!-- navigation bar container -->
+        <nav>
+            <!-- Internal Website Navigation bar -->
+            <ul class="main-nav">
+                <li><a href="index.html">MINGO</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        <!-- **Nested** Year Navigation bar -->
+            <nav aria-label="Navigation by year" class="push">
+                <ul class="pagination">
+                  <li class="page-item active" ><a class="page-link" href="#">2022</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2021</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2020</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2019</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2018</a></li>
+                </ul>
+            </nav>
+        </nav>
+
+        <!--
+        <a class="letter-container-sm" data-toggle="collapse" href="#collapseM" role="button" aria-expanded="false" aria-controls="collapseM">M</a>
+            <div class="collapse" id="collapseM">
+                <a href="#poster1" name="return1"><button onclick="showDescription1()"><div class="movie"><img src="./images/rush-hour.webp" alt="The Guest"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster2" name="return2"><button onclick="showDescription2()"><div class="movie"><img src="./images/get-out.webp" alt="Austin Powers"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster3" name="return3"><button onclick="showDescription3()"><div class="movie"><img src="./images/scott-pilgrim.webp" alt="The Tree of Life"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster4" name="return4"><button onclick="showDescription4()"><div class="movie"><img src="./images/space-jam.webp" alt="Observe and Report"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster5" name="return5"><button onclick="showDescription5()"><div class="movie"><img src="./images/braveheart.webp" alt="Zootopia"><div class="centered-txt"></div></div></button></a>
+            </div>
+        -->
+
+        <div>
+            <video playsinline autoplay muted loop>
+              <source src="images/BG/confetti3.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+
+            <div class="frame">
+                <div class="container-fluid">
+                    <div class="row">
+                        <br><br><br><br><br><br>
+                    </div>	
+                    <div class="row">
+
+                        <div class="container">
+                            <!-- MINGO LETTER ROW-->
+                            <div class="letter-container-nm">M</div>
+                            <div class="letter-container-nm">I</div>
+                            <div class="letter-container-nm">N</div>
+                            <div class="letter-container-nm">G</div>
+                            <div class="letter-container-nm">O</div>
+                            <!-- FIRST ROW -->
+                            <div class="letter-container-sm">M</div>
+                            <a href="#poster1" name="return1"><button onclick="showDescription1()"><div class="movie"><img src="./images/rush-hour.webp" alt="Rush Hour"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster2" name="return2"><button onclick="showDescription2()"><div class="movie"><img src="./images/get-out.webp" alt="Get Out"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster3" name="return3"><button onclick="showDescription3()"><div class="movie"><img src="./images/scott-pilgrim.webp" alt="Scott Pilgrim vs. the World"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster4" name="return4"><button onclick="showDescription4()"><div class="movie"><img src="./images/space-jam.webp" alt="Space Jam"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster5" name="return5"><button onclick="showDescription5()"><div class="movie"><img src="./images/braveheart.webp" alt="Braveheart"><div class="centered-txt"></div></div></button></a>
+                            <!-- SECOND ROW -->
+                            <div class="letter-container-sm">I</div>
+                            <a href="#poster6" name="return6"><button onclick="showDescription6()"><div class="movie"><img src="./images/a-scanner-darkly.webp" alt="A Scanner Darkly"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster7" name="return7"><button onclick="showDescription7()"><div class="movie"><img src="./images/the-godfather.webp" alt="The Godfather"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster8" name="return8"><button onclick="showDescription8()"><div class="movie"><img src="./images/walk-hard.webp" alt="Walk Hard"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster9" name="return9"><button onclick="showDescription9()"><div class="movie"><img src="./images/ballad-of-buster-scruggs.webp" alt="The Ballad of Buster Scruggs"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster10" name="return10"><button onclick="showDescription10()"><div class="movie"><img src="./images/rat-race.webp" alt="Rat Race"><div class="centered-txt"></div></div></button></a>
+                            <!-- THIRD ROW -->
+                            <div class="letter-container-sm">N</div>
+                            <a href="#poster11" name="return11"><button onclick="showDescription11()"><div class="movie"><img src="./images/who-framed-roger-rabbit.webp" alt="Who Framed Roger Rabbit"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster12" name="return12"><button onclick="showDescription12()"><div class="movie"><img src="./images/darkman.webp" alt="Darkman"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster13" name="return13"><button onclick="showDescription13()"><div class="movie"><img src="./images/darkman.webp" alt=""><div class="centered-txt">Free Space</div></div></button></a>
+                            <a href="#poster14" name="return14"><button onclick="showDescription14()"><div class="movie"><img src="./images/the-producers.webp" alt="The Producers"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster15" name="return15"><button onclick="showDescription15()"><div class="movie"><img src="./images/nightbreed.webp" alt="Nightbreed"><div class="centered-txt"></div></div></button></a>
+                            <!-- FOURTH ROW -->
+                            <div class="letter-container-sm">G</div>
+                            <a href="#poster16" name="return16"><button onclick="showDescription16()"><div class="movie"><img src="./images/sleeper.webp" alt="Sleeper"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster17" name="return17"><button onclick="showDescription17()"><div class="movie"><img src="./images/grave-of-the-fireflies.webp" alt="Grave of the Fireflies"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster18" name="return18"><button onclick="showDescription18()"><div class="movie"><img src="./images/beavis-and-butt-head-do-america.webp" alt="Beavis and Butt-Head Do America"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster19" name="return19"><button onclick="showDescription19()"><div class="movie"><img src="./images/once-upon-a-time-in-hollywood.webp" alt="Once Upon a Time in Hollywood"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster20" name="return20"><button onclick="showDescription20()"><div class="movie"><img src="./images/terminator-2.webp" alt="Terminator 2"><div class="centered-txt"></div></div></button></a>
+                            <!-- FIFTH ROW -->
+                            <div class="letter-container-sm">O</div>
+                            <a href="#poster21" name="return21"><button onclick="showDescription21()"><div class="movie"><img src="./images/parasite.webp" alt="Parasite"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster22" name="return22"><button onclick="showDescription22()"><div class="movie"><img src="./images/mary-poppins.webp" alt="Mary Poppins"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster23" name="return23"><button onclick="showDescription23()"><div class="movie"><img src="./images/worlds-greatest-dad.webp" alt="World's Greatest Dad"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster24" name="return24"><button onclick="showDescription24()"><div class="movie"><img src="./images/blue-ruin.webp" alt="Blue Ruin"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster25" name="return25"><button onclick="showDescription25()"><div class="movie"><img src="./images/muppet-treasure-island.webp" alt="Muppet Treasure Island"><div class="centered-txt"></div></div></button></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br><br><br><br><br><br>
+                    </div>	
+                </div>
+
+
+
+            </div>
+
+        <!-- DESCRIPTIONS FIRST ROW -->
+        <div id="description1" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/rush-hour.webp"></div>
+                    <div class="article-txt"><a name="poster1" href="#return1">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description2" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/get-out.webp"></div>
+                    <div class="article-txt"><a name="poster2" href="#return2" class="rtrn-btn"><i class="bi bi-arrow-up-circle-fill"></i></a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description3" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/scott-pilgrim.webp"></div>
+                    <div class="article-txt"><a name="poster3" href="#return3">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description4" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/space-jam.webp"></div>
+                    <div class="article-txt"><a name="poster4" href="#return4">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description5" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/braveheart.webp"></div>
+                    <div class="article-txt"><a name="poster5" href="#return5">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <!-- DESCRIPTIONS SECOND ROW -->
+        <div id="description6" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/a-scanner-darkly.webp"></div>
+                    <div class="article-txt"><a name="poster6" href="#return6">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description7" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/the-godfather.webp"></div>
+                    <div class="article-txt"><a name="poster7" href="#return7">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description8" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/walk-hard.webp"></div>
+                    <div class="article-txt"><a name="poster8" href="#return8">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description9" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/ballad-of-buster-scruggs.webp"></div>
+                    <div class="article-txt"><a name="poster9" href="#return9">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description10" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/rat-race.webp"></div>
+                    <div class="article-txt"><a name="poster10" href="#return10">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <!-- DESCRIPTIONS THIRD ROW -->
+        <div id="description11" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/who-framed-roger-rabbit.webp"></div>
+                    <div class="article-txt"><a name="poster11" href="#return11">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description12" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/darkman.webp"></div>
+                    <div class="article-txt"><a name="poster12" href="#return12">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description13" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/"></div>
+                    <div class="article-txt"><a name="poster13" href="#return13">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description14" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/the-producers.webp"></div>
+                    <div class="article-txt"><a name="poster14" href="#return14">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description15" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/nightbreed.webp"></div>
+                    <div class="article-txt"><a name="poster15" href="#return15">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <!-- DESCRIPTIONS FOURTH ROW -->
+        <div id="description16" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/sleeper.webp"></div>
+                    <div class="article-txt"><a name="poster16" href="#return16">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description17" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/grave-of-the-fireflies.webp"></div>
+                    <div class="article-txt"><a name="poster17" href="#return17">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description18" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/beavis-and-butt-head-do-america.webp"></div>
+                    <div class="article-txt"><a name="poster18" href="#return18">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description19" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/once-upon-a-time-in-hollywood.webp"></div>
+                    <div class="article-txt"><a name="poster19" href="#return19">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description20" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/terminator-2.webp"></div>
+                    <div class="article-txt"><a name="poster20" href="#return20">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <!-- DESCRIPTIONS FIFTH ROW -->
+        <div id="description21" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/parasite.webp"></div>
+                    <div class="article-txt"><a name="poster21" href="#return21">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description22" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/mary-poppins.webp"></div>
+                    <div class="article-txt"><a name="poster22" href="#return22">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description23" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/worlds-greatest-dad.webp"></div>
+                    <div class="article-txt"><a name="poster23" href="#return23">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description24" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/blue-ruin.webp"></div>
+                    <div class="article-txt"><a name="poster24" href="#return24">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+
+        <div id="description25" style="display:none">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/muppet-treasure-island.webp"></div>
+                    <div class="article-txt"><a name="poster25" href="#return25">RETURN TO MOVIE POSTER</a></div>
+                </article>
+            </div>
+        </div>
+        
+    <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-txt">FOOTER</div>
+            <div class="footer-txt">&copy; MINGO 2022</div>
+            <div class="footer-txt">FOOTER</div>
+        <footer>
+
+        <!-- JavaScript Stylesheet -->
+        <script src="./scripts.js"></script>
+
+        <!-- Bootstrap JQuery, Popper, and JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        
+    
+    </body>
+</html>
