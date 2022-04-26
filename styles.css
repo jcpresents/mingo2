@@ -24,41 +24,63 @@ body {
 nav {
     display: flex;
     margin: 0;
-    height: 10vh;
+    height: 9vh;
     min-height: 40px;
-    background-color: white;
+    background: rgba(255,255,255, 0.94);
+    align-items: center;
 }
 
 /* Main navigation styles */
 .main-nav {
     display: flex;
     list-style: none;
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 0;
-   
+
+    width: 100%;
+}
+
+.main-nav ul {
+    padding-left: 0;
+    margin: 0;
 }
 
 .main-nav li {
-    padding: 10px;
+    padding: 0;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    border-right: 1.5px solid;
+    border-right-color: hsl(334, 100%, 50%);
 }
 
+.main-nav li:last-child {
+    border: none;
+  }
+
 .main-nav a {
-    color: red;
+    color: hsl(265, 83%, 57%);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .main-nav a:hover {
-    color: black;
+    color: hsl(217, 100%, 61%);
 }
 
 /* push navigation to right side */
 .push {
     margin-left: auto;
+    background: none;
 }
 
 /* year navigation styles */
 .pagination {
     padding: 0;
+}
+
+#active {
+    font-weight: 700;
+    color: hsl(19, 97%, 51%);
 }
 
 /* mingo grid layout */
@@ -69,8 +91,6 @@ nav {
     align-items: start;
     width: 73%;
 }
-
-
   
 /* container for each movie poster image */
 .movie {
@@ -119,7 +139,7 @@ img {
     min-height: 325px;
     max-height: 325px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     padding: none;
 }
 
