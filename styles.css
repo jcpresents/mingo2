@@ -136,8 +136,8 @@ nav {
 
 /* default image styles*/
 img {
-    min-height: 325px;
-    max-height: 325px;
+    min-height: 125px;
+    max-height: 285px;
     width: auto;
     object-fit: fill;
     padding: none;
@@ -266,7 +266,7 @@ button {
         margin: auto;
 
         position: relative;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     /* Main MINGO header across grid style ** HIDDEN WHEN BELOW 600PX WIDTH ** */
@@ -307,9 +307,14 @@ button {
     /* default image styles */
     img {
         width: 100%;
-        max-height: 100%;
+        max-height: 350px;
         object-fit: fill;
         margin: auto;
+    }
+    
+    /* Collapse mobile columns */
+    .hider {
+        display:none;
     }
 }
 
@@ -347,7 +352,7 @@ video {
     max-height: 325px;
 }
 
-/* Specific styling for movie titles in description */
+/* Specific styling for the movies' titles in description */
 .title {
     font-size: larger;
     color: white;
@@ -366,3 +371,9 @@ video {
     border-bottom-right-radius: 60px 60px;
     
 }
+
+/* Collapse mobile columns */
+.collapse {
+    max-height: 0px;
+}
+
