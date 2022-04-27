@@ -138,23 +138,24 @@ nav {
 img {
     min-height: 325px;
     max-height: 325px;
-    width: 100%;
-    object-fit: contain;
+    width: auto;
+    object-fit: fill;
     padding: none;
 }
+
 
 /* two column article for descriptions */
 article {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-
-    border: 1px solid #bbb;
+    /* background-image: linear-gradient(to right, rgba(255, 0, 0, 0.99),rgba(255, 166, 0, 0.99),rgba(255, 255, 0, 0.99),rgba(0, 128, 0, 0.99),rgba(0, 0, 255, 0.99),rgba(76, 0, 130, 0.99),rgba(238, 130, 238, 0.99)); */
 }
 
 /* text styling for article */
 .article-txt {
-    background-color: rgb(189, 18, 18);
-    border: 1px solid #bbb;
+    /* display: flex; */
+    justify-content: start;
+    padding-left:0px;
 }
 
 /* image styling for article */
@@ -164,6 +165,8 @@ article {
     min-height: 275px;
     max-height: 100%;
     padding: none;
+    justify-content: end;
+    padding-right:0px;
 }
 
 /* description img styles */
@@ -310,8 +313,8 @@ button {
     }
 }
 
-/* Additions */
-
+/* --Additions-- */
+/* Fitting for the background confetti.webm */
 video {
     object-fit: cover;
     width: 100vw;
@@ -322,9 +325,44 @@ video {
     z-index: -2;
 }
 
+/* Fitting for the frame behind the film posters */
 .frame {
     background: url(/images/BG/frame2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size:100% 100%;
+}
+
+/* Styling for the film entries and descriptions */
+.entry {
+    background: rgba(0, 0, 0, 0.995);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 225px;
+    text-align: start;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    min-height: 325px;
+    max-height: 325px;
+}
+
+/* Specific styling for movie titles in description */
+.title {
+    font-size: larger;
+    color: white;
+    text-align: center;
+}
+
+/* Make the entries rounded (left side) */
+.article-img > img {
+    border-top-left-radius: 60px 60px;
+    border-bottom-left-radius: 60px 60px;
+}
+
+/* Make the entries rounded (right side) */
+.article-txt > div {
+    border-top-right-radius: 60px 60px;
+    border-bottom-right-radius: 60px 60px;
+    
 }
