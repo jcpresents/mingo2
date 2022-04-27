@@ -8,6 +8,8 @@ function showDescription1() {
   x.style.display = displayValue;
 }
 
+
+
 function showDescription2() {
   let x = document.getElementById("description2")
     displayValue = "";
@@ -226,4 +228,31 @@ function showDescription25() {
     displayValue = "none";
 
   x.style.display = displayValue;
+}
+
+// Collapse function for mobile rows //
+
+function collapseM() {
+  let x = document.getElementById("rowM")
+  x.classList.toggle("collapse");
+}
+
+function collapseI() {
+  let x = document.getElementById("rowI")
+  x.classList.toggle("collapse");
+}
+
+function collapseN() {
+  let x = document.getElementById("rowN")
+  x.classList.toggle("collapse");
+}
+
+function collapseG() {
+  let x = document.getElementById("rowG")
+  x.classList.toggle("collapse");
+}
+
+function collapseO() {
+  let x = document.getElementById("rowO")
+  x.classList.toggle("collapse");
 }
