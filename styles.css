@@ -422,7 +422,7 @@ video {
 
 /* Fitting for the frame behind the film posters */
 .frame {
-    background: url(/images/BG/frame3.webm);
+    background: url(/images/BG/frame3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size:100% 100%;
