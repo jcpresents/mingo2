@@ -126,7 +126,9 @@ nav {
     color: rgb(255, 255, 255);
     font-weight: 800;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5rem;
+    padding-top: 12px;
+    text-shadow: 3px 3px 5px black;
 }
 
 /* MINGO hidden when screen is full sized */
@@ -141,8 +143,8 @@ img {
     width: auto;
     object-fit: fill;
     padding: none;
+    box-shadow: -5px 5px 5px black;
 }
-
 
 /* two column article for descriptions */
 article {
@@ -156,6 +158,7 @@ article {
     /* display: flex; */
     justify-content: start;
     padding-left:0px;
+    font-size: 14px;
 }
 
 /* image styling for article */
@@ -269,6 +272,20 @@ button {
         max-width: 300px;
     }
 
+    .movie {
+        filter: grayscale(0);
+    }
+
+    .frame-mobile {
+        margin-top: 4%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 4px solid hsl(265, 83%, 57%);
+        background-color: rgba(255, 255, 255, 0.94);
+        color: hsl(217, 100%, 61%);
+    }
+    
+
     /* Main MINGO header across grid style ** HIDDEN WHEN BELOW 600PX WIDTH ** */
     .letter-container-nm {
         display: none;
@@ -286,6 +303,11 @@ button {
         /* spacing */
         padding: none;
         margin: -20px;
+        
+    }
+
+    .letter-container-sm > button {
+        text-shadow: 3px 3px 5px black;
     }
 
     /* navigation container */
@@ -295,13 +317,8 @@ button {
 
     /* main navigation styles */
     .main-nav {
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 0;
-    }
-
-    /* year navigation styles */
-    .pagination {
-        font-size: 0.8em;
     }
 
     /* default image styles */
@@ -314,6 +331,27 @@ button {
     
     /* Collapse mobile columns */
     .hider {
+        display:none;
+    } 
+}
+
+/* 992px screen minimum breakpoint */
+@media only screen and (min-width: 992px) { 
+    .article-txt {
+        /* display: flex; */
+        justify-content: start;
+        padding-left:0px;
+        font-size: 20px;
+    }
+
+    div > .title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 600px) { 
+    /* Collapse mobile columns */
+    .hider-small {
         display:none;
     } 
 }
@@ -420,14 +458,6 @@ video {
     z-index: -2;
 }
 
-/* Fitting for the frame behind the film posters */
-.frame {
-    background: url(/images/BG/frame3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-}
-
 /* Styling for the film entries and descriptions */
 .entry {
     background: rgba(0, 0, 0, 0.995);
@@ -441,9 +471,26 @@ video {
     height:100%;
 }
 
+.frame {
+    margin-top: 4%;
+    border: 4px solid hsl(265, 83%, 57%);
+    background-color: rgba(255, 255, 255, 0.94);
+    color: hsl(217, 100%, 61%);
+    min-width: 550px;
+}
+
+.frame-mobile {
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid hsl(265, 83%, 57%);
+    background-color: rgba(255, 255, 255, 0.94);
+    color: hsl(217, 100%, 61%);
+}
+
 /* Specific styling for the movies' titles in description */
 .title {
-    font-size: larger;
+    font-size: 26px;
     color: white;
     text-align: center;
 }
