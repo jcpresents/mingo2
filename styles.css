@@ -20,6 +20,24 @@ body {
     vertical-align: top;
 }
 
+/* Mingo board fram styles */
+.frame {
+    margin-top: 4%;
+    border: 4px solid hsl(265, 83%, 57%);
+    background-color: rgba(255, 255, 255, 0.94);
+    color: hsl(217, 100%, 61%);
+    min-width: 550px;
+}
+
+.frame-mobile {
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid hsl(265, 83%, 57%);
+    background-color: rgba(255, 255, 255, 0.94);
+    color: hsl(217, 100%, 61%);
+}
+
 /* Navigation Bar container */
 nav {
     display: flex;
@@ -28,6 +46,8 @@ nav {
     min-height: 40px;
     background: rgba(255,255,255, 0.94);
     align-items: center;
+    -webkit-transform: translate3d(0,0,2px);
+    transform: translate3d(0,0,2px);
 }
 
 /* Main navigation styles */
@@ -38,6 +58,7 @@ nav {
     margin: 0;
 
     width: 100%;
+
 }
 
 .main-nav ul {
@@ -90,6 +111,8 @@ nav {
     padding: 0;
     align-items: start;
     width: 73%;
+    -webkit-transform: translate3d(0,0,2px);
+    transform: translate3d(0,0,2px);
 }
   
 /* container for each movie poster image */
@@ -257,6 +280,8 @@ button {
     background-color: yellow;
 }
 
+
+
 /* 600px screen minimum breakpoint */
 @media only screen and (max-width: 600px) { 
     /* set single column format when small */
@@ -326,13 +351,32 @@ button {
         width: 100%;
         max-height: 350px;
         object-fit: fill;
-        margin: auto;
     }
     
     /* Collapse mobile columns */
     .hider {
         display:none;
     } 
+
+    /* image styling for article (mobile) */
+    .article-img {
+        display: flex;
+        height: 100%;
+        min-height: 275px;
+        max-height: 100%;
+        padding: none;
+        justify-content: end;
+        padding-right:0px;
+    }
+
+    /* description img styles (mobile) */
+    .description-img {
+        height: 100%;
+        /* min-height: 275px;
+        max-height: 300px; */
+        object-fit: fill;
+        padding: none;
+    }
 }
 
 /* 992px screen minimum breakpoint */
@@ -456,44 +500,44 @@ video {
     background: white;
     top: 0;
     left: 0;
-    z-index: -2;
+    z-index: -1;
+    -webkit-transform: translate3d(0,0,1px);
+    transform: translate3d(0,0,1px);
 }
 
-/* Styling for the film entries and descriptions */
-.entry {
-    background: rgba(0, 0, 0, 0.995);
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+
+
+/* Collapse mobile columns */
+.flatten {
+    max-height: 0px;
+}
+
+/* --Modal Stylings-- */
+/* Overall styling for the modal */
+.modal {
+    -webkit-transform: translate3d(0,0,2px);
+    transform: translate3d(0,0,2px);
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    text-align: start;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    height:100%;
+    pointer-events: auto;
+    background-color: rgba(255, 255, 255, 0);
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.1);
+    border-radius: 60px 60px;
+    outline: 0;
 }
 
-.frame {
-    margin-top: 4%;
-    border: 4px solid hsl(265, 83%, 57%);
-    background-color: rgba(255, 255, 255, 0.94);
-    color: hsl(217, 100%, 61%);
-    min-width: 550px;
-}
-
-.frame-mobile {
-    margin-top: 4%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 4px solid hsl(265, 83%, 57%);
-    background-color: rgba(255, 255, 255, 0.94);
-    color: hsl(217, 100%, 61%);
-}
-
-/* Specific styling for the movies' titles in description */
-.title {
-    font-size: 26px;
-    color: white;
-    text-align: center;
+/* Gets the modal background opacity just right */
+.modal-backdrop
+{
+    opacity:0.65 !important;
 }
 
 /* Make the entries rounded (left side) */
@@ -509,35 +553,30 @@ video {
     border-bottom-right-radius: 60px 60px;
 }
 
-/* Collapse mobile columns */
-.flatten {
-    max-height: 0px;
+/* Styling for the film entries and descriptions */
+.entry {
+    background: rgba(0, 0, 0, 0.995);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: start;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    height:100%;
 }
 
-/* Overall styling for the modal */
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: rgba(255, 255, 255, 0);
-    background-clip: padding-box;
-    border: 0px solid rgba(0,0,0,.1);
-    border-radius: 60px 60px;
-    outline: 0;
+/* Specific styling for the movies' titles in description */
+.title {
+    font-size: 26px;
+    color: white;
+    text-align: center;
 }
 
 /* Positions the close button correctly within the modal */
 .btn-close-white {
     float:right;
     padding: 17px;
-}
-
-/* Gets the modal background opacity just right */
-.modal-backdrop
-{
-    opacity:0.65 !important;
 }
 
 /* Entry star ratings */
